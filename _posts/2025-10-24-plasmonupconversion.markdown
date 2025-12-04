@@ -2,7 +2,7 @@
 layout: post
 title:  "Plasmon-enhanced ultralow threshold solid-state triple fusion upconversion"
 date:   2025-10-24 22:21:59 +00:00
-image: /tn\images/device.png
+image: /images/device.png
 categories: research
 author: "Yiling Li"
 authors: "Jesse A. Wisch, Kelvin A. Green, Amelie C. Lemay, <strong>Yiling Q. Li</strong>, Tersoo Upaa Jr., Evgeny Danilov, Felix Castellano, Barry Rand"
