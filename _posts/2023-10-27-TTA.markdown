@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Plasmon enhanced light-mediated chemical processes"
+date:   2023-10-27 22:21:59 +00:00
+image: /images/TTA.png
+categories: research
+author: "Yiling Li"
+authors: "<strong>Yiling Q. Li</strong>, Tersoo Upaa Jr., Jesse A. Wisch, Barry P. Rand"
+venue: "Andlinger Center for Energy and the Environment Annual Meeting"
+poster: https://drive.google.com/file/d/13SfSJO4OszezOgyo3la__MD-DjKrZR11/view?usp=sharing
+---
+We optimize the dielectric and acceptor layers of organic light-emitting diodes (OLEDs) to make triplet-triplet annihilation photon upconversion (TTA-UC) more efficient. Our final structure was a non-doped annihilator layer sandwiched between two sensitizer layers and no longer had a dielectric layer.
