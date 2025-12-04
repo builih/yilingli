@@ -7,81 +7,38 @@
   <title>{{ site.name }}</title>
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet">
   <style>
-    /* Reset and full-height layout */
-    * {
-      box-sizing: border-box;
-    }
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      font-family: 'Lato', sans-serif;
-    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; height: 100%; font-family: 'Lato', sans-serif; }
 
-    /* Container flex layout */
-    .container {
-      display: flex;
-      height: 100vh; /* full viewport height */
-      overflow: hidden; /* prevent body scroll */
-    }
+    .container { display: flex; height: 100vh; overflow: hidden; }
 
-    /* Sidebar (profile, bio, picture) */
+    /* Sidebar */
     .sidebar {
-      width: 300px; /* fixed width */
+      width: 300px;
       padding: 20px;
       background-color: #f5f5f5;
-      overflow-y: auto; /* scroll if content is long */
+      overflow-y: auto;
       flex-shrink: 0;
     }
-    .sidebar img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      margin-top: 10px;
-    }
-    .sidebar h1 {
-      margin-top: 0;
-    }
-    .sidebar a {
-      text-decoration: none;
-      color: #333;
-    }
+    .sidebar img { width: 100%; height: auto; border-radius: 8px; margin-top: 10px; }
+    .sidebar h1 { margin-top: 0; }
+    .sidebar a { text-decoration: none; color: #333; }
 
     /* Main content scroll */
     .main-content {
       flex-grow: 1;
       padding: 20px;
-      overflow-y: auto; /* vertical scroll */
+      overflow-y: auto;
     }
 
     /* Post layout */
-    .post {
-      display: flex;
-      margin-bottom: 30px;
-      align-items: flex-start;
-    }
-    .post img {
-      width: 200px;
-      height: auto;
-      margin-right: 20px;
-    }
-    .post-text h3 {
-      margin: 0 0 5px 0;
-    }
-    .post-text em {
-      font-style: italic;
-      color: #555;
-    }
-    .post-text a {
-      margin-right: 5px;
-      font-size: 0.9em;
-      color: #1a0dab;
-    }
+    .post { display: flex; margin-bottom: 30px; align-items: flex-start; }
+    .post img { width: 200px; height: auto; margin-right: 20px; }
+    .post-text h3 { margin: 0 0 5px 0; }
+    .post-text em { font-style: italic; color: #555; }
+    .post-text a { margin-right: 5px; font-size: 0.9em; color: #1a0dab; }
 
-    /* Research heading */
-    .main-content h2 {
-      margin-top: 0;
-    }
+    .main-content h2 { margin-top: 0; }
   </style>
 </head>
 
@@ -90,10 +47,10 @@
     <!-- Sidebar -->
     <div class="sidebar">
       <h1>Yiling Li</h1>
-      <p>I am a fourth-year undergraduate student at <a href="https://www.princeton.edu/">Princeton University</a> majoring in <a href="https://ece.princeton.edu/">Electrical & Computer Engineering</a> with minors in <a href="https://csml.princeton.edu/">Statistics & Machine Learning</a>, <a href="https://robo.princeton.edu/">Robotics</a>, and <a href="https://arts.princeton.edu/academics/visual-arts/">Visual Arts</a>.</p>
-      <p>My research focuses on advancing light-driven technologies at the intersection of nanophotonics and computational imaging...</p>
-      <p>I am currently working with <a href="https://www.cs.princeton.edu/~fheide/">Professor Felix Heide</a> at <a href="https://light.princeton.edu/">Princeton Computational Imaging Lab</a> for my senior thesis...</p>
-      <p>Beyond research, I am also the President of <a href="https://ecouncil.princeton.edu/">Princeton Engineering Council</a>, StudioLab makerspace technician, and previous Artistic Director of Triple 8 Dance Company.</p>
+      <p>I am a fourth-year undergraduate student at <a href="https://www.princeton.edu/">Princeton University</a> majoring in <a href="https://ece.princeton.edu/">Electrical & Computer Engineering</a> with minors in Statistics & Machine Learning, Robotics, and Visual Arts.</p>
+      <p>My research focuses on advancing light-driven technologies at the intersection of nanophotonics and computational imaging.</p>
+      <p>I am currently working with <a href="https://www.cs.princeton.edu/~fheide/">Professor Felix Heide</a> at <a href="https://light.princeton.edu/">Princeton Computational Imaging Lab</a> for my senior thesis.</p>
+      <p>Beyond research, I am also the President of Princeton Engineering Council, StudioLab makerspace technician, and previous Artistic Director of Triple 8 Dance Company.</p>
       <p style="text-align:center">
         <a target="_blank" href="https://mailhide.io/e/Ss324UTs">Email</a> / 
         <a href="https://github.com/builih">GitHub</a> / 
@@ -109,12 +66,14 @@
       <p>I'm interested in nanophotonics, optoelectronics, display technology, and computational imaging & optics.</p>
 
       {% for post in site.posts %}
-        {% if 'research' in post.categories %}
+        {% if post.categories contains 'research' %}
           <div class="post">
-            <img src="/yilingli/tn/{{ post.image | remove: '/images/' }}" alt="project image">
+            <!-- safe thumbnail path -->
+            {% assign thumb = post.image | split: '/' | last %}
+            <img src="/tn/{{ thumb }}" alt="project image">
             <div class="post-text">
               <h3>{{ post.title }}</h3>
-              <p>{{ post.authors }}</p>
+              <p>{{ post.authors | strip_html }}</p>
               <em>{{ post.venue }}</em>, {{ post.date | date: "%Y" }}
               <p>
                 {% if post.paper %}<a href="{{ post.paper }}">paper</a>{% endif %}
