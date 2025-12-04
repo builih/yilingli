@@ -1,129 +1,134 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E00L9PT3V9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-E00L9PT3V9');
+  </script>
   <title>{{ site.name }}</title>
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet">
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      font-family: 'Lato', sans-serif;
-    }
 
-    .container {
-      display: flex;
-      height: 100vh;
-      overflow: hidden;
-    }
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 
-    .sidebar {
-      width: 300px;
-      padding: 20px;
-      background-color: #f5f5f5;
-      overflow-y: auto;
-      flex-shrink: 0;
-    }
-    .sidebar img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      margin-top: 10px;
-    }
-    .sidebar h1 {
-      margin-top: 0;
-    }
-    .sidebar a {
-      text-decoration: none;
-      color: #333;
-    }
+  <meta name="author" content="{{ site.name }}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    .main-content {
-      flex-grow: 1;
-      padding: 20px;
-      overflow-y: auto;
-    }
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
-    .post {
-      display: flex;
-      margin-bottom: 30px;
-      align-items: flex-start;
-    }
-    .post img {
-      width: 200px;
-      height: auto;
-      margin-right: 20px;
-    }
-    .post-text h3 {
-      margin: 0 0 5px 0;
-    }
-    .post-text em {
-      font-style: italic;
-      color: #555;
-    }
-    .post-text a {
-      margin-right: 5px;
-      font-size: 0.9em;
-      color: #1a0dab;
-    }
-
-    .main-content h2 {
-      margin-top: 0;
-    }
-  </style>
 </head>
 
 <body>
-  <div class="container">
-    <div class="sidebar">
-      <h1>Yiling Q. Li</h1>
-      <p>I am a fourth-year undergraduate student at <a href="https://www.princeton.edu/">Princeton University</a> majoring in <a href="https://ece.princeton.edu/">Electrical & Computer Engineering</a> with minors in <a href="https://csml.princeton.edu/">Statistics & Machine Learning</a>, <a href="https://robo.princeton.edu/">Robotics</a>, and <a href="https://arts.princeton.edu/academics/visual-arts/">Visual Arts</a>.</p>
-      <p>My research focuses on advancing light-driven technologies at the intersection of nanophotonics and computational imaging...</p>
-      <p>I am currently working with <a href="https://www.cs.princeton.edu/~fheide/">Professor Felix Heide</a> at <a href="https://light.princeton.edu/">Princeton Computational Imaging Lab</a> for my senior thesis...</p>
-      <p>Beyond research, I am also the President of <a href="https://ecouncil.princeton.edu/">Princeton Engineering Council</a>, StudioLab makerspace technician, and previous Artistic Director of Triple 8 Dance Company.</p>
-      <p style="text-align:center">
-        <a target="_blank" href="https://mailhide.io/e/Ss324UTs">Email</a> / 
-        <a href="https://github.com/builih">GitHub</a> / 
-        <a href="https://scholar.google.com/citations?user=ubTFL70AAAAJ&hl=en">Google Scholar</a> / 
-        <a href="https://www.linkedin.com/in/yiling-li-8bb818260/">LinkedIn</a>
-      </p>
-      <img src="images/profile.png" alt="profile photo">
-    </div>
-
-    <div class="main-content">
-      <h2>Research</h2>
-      <p>I'm interested in nanophotonics, optoelectronics, display technology, and computational imaging & optics.</p>
-
-      {% for post in site.posts %}
-        {% if 'research' in post.categories %}
-          <div class="post">
-            <img src="/yilingli/tn/{{ post.image | remove: '/images/' }}" alt="project image">
-            <div class="post-text">
-              <h3>{{ post.title }}</h3>
-              <p>{{ post.authors }}</p>
-              <em>{{ post.venue }}</em>, {{ post.date | date: "%Y" }}
-              <p>
-                {% if post.paper %}<a href="{{ post.paper }}">paper</a>{% endif %}
-                {% if post.video %}<a href="{{ post.video }}">video</a>{% endif %}
-                {% if post.code %}<a href="{{ post.code }}">code</a>{% endif %}
-                {% if post.poster %}<a href="{{ post.poster }}">poster</a>{% endif %}
-                {% if post.slides %}<a href="{{ post.slides }}">slides</a>{% endif %}
-                {% if post.website %}<a href="{{ post.website }}">website</a>{% endif %}
-                {% if post.youtube %}<a href="{{ post.youtube }}">youtube</a>{% endif %}
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:60%;vertical-align:middle">
+              <h1>
+                Yiling Li
+              </h1>
+              <p>I am a fourth-year undergraduate student at <a href="https://www.princeton.edu/">Princeton University</a> majoring in <a href="https://ece.princeton.edu/">Electrical & Computer Engineering</a> with minors in <a href="https://csml.princeton.edu/">Statistics & Machine Learning</a>, <a href="https://robo.princeton.edu/">Robotics</a>, and <a href="https://arts.princeton.edu/academics/visual-arts/">Visual Arts</a>. I am applying to PhD programs in Electrical Engineering for Autumn 2026.
               </p>
+              <p>
+                My research focuses on advancing light-driven technologies at the intersection of nanophotonics and computational imaging. I am particularly interested in how nanoscale structures, material systems, and algorithmic models can be co-designed to control light through photon upconversion, metasurface engineering, or holographic display architectures for next-generation optoelectronic devices and display systems.
+              </p>
+              <p>
+                I am currently working with <a href="https://www.cs.princeton.edu/~fheide/">Professor Felix Heide</a> at <a href="https://light.princeton.edu/">Princeton Computational Imaging Lab</a> for my senior thesis on the optimization of metasurface neural etendue expansion with hardware-in-the-loop.
+              </p>
+              <p>
+                Beyond research, I am also the President of <a href="https://ecouncil.princeton.edu/">Princeton Engineering Council</a>, StudioLab makerspace technician at <a href="https://cst.princeton.edu/studiolab">Princeton Council on Science & Technology</a>, and previous Artistic Director of <a href="https://triple8dancecompany.com/">Triple 8 Dance Company</a>.
+              </p>
+              <p style="text-align:center">
+                <a target="_blank" href="https://mailhide.io/e/Ss324UTs"> Email</a> &nbsp;/&nbsp;
+                <a href="https://github.com/builih">GitHub</a> &nbsp;/&nbsp;
+                <a href="https://scholar.google.com/citations?user=ubTFL70AAAAJ&hl=en">Google Scholar</a> &nbsp;/&nbsp;
+                <a href="https://www.linkedin.com/in/yiling-li-8bb818260/"> LinkedIn </a>
+              </p>
+            </td>
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <img style="width:100%;max-width:100%" alt="profile photo" src="images/profile.png">
+            </td>
+          </tr>
+        </table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
+              <h2>Research</h2>
+              <p>
+                I'm interested in nanophotonics, optoelectronics, display technology, and computational imaging & optics.
+              </p>
+            </td>
+          </tr>
+        </table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+
+          {% for post in site.posts %}
+          {% for cat in post.categories %}
+          {% if cat == 'research' %}
+          <tr>
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+              <img src="/yilingli/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+              <h3>{{post.title}}</h3>
+              <br>
+              {{post.authors}}
+
+              <br>
+              <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
+              <br>
+              {% if post.paper %}
+              <a href="{{post.paper}}">paper</a> /
+              {% endif %}
+              {% if post.video %}
+              <a href="{{post.video}}">video</a> /
+              {% endif %}
+              {% if post.code %}
+              <a href="{{post.code}}">code</a> /
+              {% endif %}
+              {% if post.poster %}
+              <a href="{{post.poster}}">poster</a> /
+              {% endif %}
+              {% if post.slides %}
+              <a href="{{post.slides}}">slides</a> /
+              {% endif %}
+              {% if post.website %}
+              <a href="{{post.website}}">website</a> /
+              {% endif %}
+              {% if post.youtube %}
+              <a href="{{post.youtube}}">youtube</a> /
+              {% endif %}
+              <p></p>
               {{ post.excerpt }}
-            </div>
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-  </div>
+            </td>
+          </tr>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:0px">
+              <br>
+              <p style="text-align:center;font-size:small;">
+                Design and source code from <a style="font-size:small;" href="https://leonidk.com/">Leonid Keselman's fork</a> of <a style="font-size:small;" href="https://jonbarron.info">Jon Barron's website</a>
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
 </body>
 
 </html>
+
