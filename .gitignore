@@ -9,3 +9,7 @@ Gemfile.lock
 node_modules
 package.json
 favicon.ico
+
+# Plaintext source for the password-protected Projects page.
+# Only the encrypted payload (baked into projects.html) should ever be committed.
+_projects_source.html

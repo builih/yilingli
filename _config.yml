@@ -91,3 +91,6 @@ exclude:
   - todo.txt
   - _temp/index.html
   - _temp/
+  # Keep the plaintext Projects content and encryption tooling out of the built site
+  - _projects_source.html
+  - encrypt_projects.js
