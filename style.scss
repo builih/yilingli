@@ -13,21 +13,14 @@
 /* BASE RULES */
 /**************/
 a {
-  // color: #1772d0;
-  color: #d8dddd;
+  color: #1772d0;
   text-decoration: none;
 }
 
 a:focus,
 a:hover {
-  //color: #f09228;
-  color: #bab2a7;
+  color: #f09228;
   text-decoration: none;
-}
-
-body {
-  background-color: #383b4e;
-  color: #798e9d
 }
 
 body,
@@ -103,8 +96,7 @@ h1 {
 }
 
 span.highlight {
-  // background-color: #ffffd0;
-  background-color: #042d46;
+  background-color: #ffffd0;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
