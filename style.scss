@@ -13,14 +13,21 @@
 /* BASE RULES */
 /**************/
 a {
-  color: #1772d0;
+  // color: #1772d0;
+  color: #d8dddd;
   text-decoration: none;
 }
 
 a:focus,
 a:hover {
-  color: #f09228;
+  //color: #f09228;
+  color: #bab2a7;
   text-decoration: none;
+}
+
+body {
+  background-color: #383b4e;
+  color: #798e9d
 }
 
 body,
