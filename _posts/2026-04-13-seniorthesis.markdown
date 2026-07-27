@@ -2,7 +2,7 @@
 layout: post
 title:  "Differentiable Forward Models for Holographic Display Systems"
 date:   2026-04-13 22:21:59 +00:00
-image: /images/eval_result_000001.png
+image: /images/thesis.png
 categories: research
 author: "Yiling Li"
 authors: "<strong>Yiling Q. Li</strong>, Congli Wang, Felix Heide"
