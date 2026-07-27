@@ -1,7 +1,7 @@
 $src = "images"
-$dst = "tn"
+$dst = "tn\images"
 
-if (!(Test-Path $dst)) { New-Item -ItemType Directory -Path $dst }
+if (!(Test-Path $dst)) { New-Item -ItemType Directory -Path $dst -Force }
 
 Get-ChildItem "$src\*.jpg","$src\*.png" | ForEach-Object {
     $base = $_.Name

@@ -7,6 +7,6 @@ categories: research
 author: "Yiling Li"
 authors: "<strong>Yiling Q. Li</strong>, Tersoo Upaa Jr., Jesse A. Wisch, Barry P. Rand"
 venue: "Andlinger Center for Energy and the Environment Annual Meeting"
-poster: pdfs\ACEE_Annual_Meeting_Poster.pdf
+poster: pdfs/ACEE_Annual_Meeting_Poster.pdf
 ---
-We optimize the dielectric and acceptor layers of organic light-emitting diodes (OLEDs) to make triplet-triplet annihilation photon upconversion (TTA-UC) more efficient. Our final structure was a non-doped annihilator layer sandwiched between two sensitizer layers with no dielectric layer.
+In this study, we optimize the dielectric and acceptor layers of organic light-emitting diodes (OLEDs) to increase the efficiency of triplet-triplet annihilation photon upconversion (TTA-UC), a process that converts two low-energy photons into one higher-energy photon.

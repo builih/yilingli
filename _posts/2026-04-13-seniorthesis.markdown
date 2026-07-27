@@ -7,6 +7,6 @@ categories: research
 author: "Yiling Li"
 authors: "<strong>Yiling Q. Li</strong>, Congli Wang, Felix Heide"
 venue: "Princeton Senior Thesis"
-poster: pdfs\499li.pdf
+poster: pdfs/499li.pdf
 ---
-We substantially improve the performance of upconversion films through excitation with surface plasmons that propagate along a planar silver-film interface, leading to an absorption enhancement that reduces the intensity threshold and enhances the external quantum efficiency. 
+This study develops camera-in-the-loop (CITL) calibration and learned differentiable forward models to compensate for real-world optical imperfections in holographic display systems. By modeling hardware nonidealities such as aberrations, illumination variation, and detector noise, we improve hologram reconstruction quality without requiring physical hardware during optimization.

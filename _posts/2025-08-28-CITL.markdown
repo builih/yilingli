@@ -7,8 +7,7 @@ categories: research
 author: "Yiling Li"
 authors: "<strong>Yiling Q. Li</strong>, Yu Wu, Chenkai Mao, Sara Azzouz, Jonathan A. Fan"
 venue: "Stanford University Electrical Engineering REU Final Presentation Day"
-poster: pdfs\EE-REU-2025-_YILING LI.pdf
-slides: pdfs\Learnable optical model for hologram correction.pdf
+poster: pdfs/EE-REU-2025-_YILING LI.pdf
+slides: pdfs/Learnable optical model for hologram correction.pdf
 ---
-We explored camera-in-the-loop (CITL) computer-generated holography (CGH) for 3D nanoscale printing in photosensitive resin by training neural networks to account for optical aberrations in a 4f optical system with metasurfaces and spatial light modulators.
-We corrected for speckle, pixel cross-talk, and zeroth order light to improve the consistency of simulated and experimental holograms.
+We investigate camera-in-the-loop (CITL) computer-generated holography (CGH) for 3D nanoscale printing in photosensitive resin by training neural networks to compensate for optical aberrations in a 4f metasurface–spatial light modulator optical system. We further correct for speckle, pixel cross-talk, and zeroth-order light to improve agreement between simulated and experimental holograms.
